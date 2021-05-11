@@ -9,9 +9,11 @@ Prodi : Ilmu Komputer 2019
 <b> Running Screenshots </b> <br>
 <a href="#">usertest</a>
 <br>
+<br>
 
-<b> Report Of Code Modification</b>
-<a href="#">diff_report.pdf</a> <br>
+<b> Report Of Code Modification</b <br>
+<a href="#">diff_report.pdf</a> <br> 
+  <br>
 
-<b> Source Code </b>
+<b> Source Code </b> <br>
 <a href="#">xv6-pdx</a>
