@@ -12,7 +12,7 @@ Prodi : Ilmu Komputer 2019
 <br>
 
 <b> Report of Code Modification</b> <br>
-<a href="#">diff_report.pdf</a> <br> 
+<a href="https://github.com/baabyygalll/Operating-System-xv6-Assignment/blob/main/diff_report.pdf">diff_report.pdf</a> <br> 
   <br>
 
 <b> Source Code </b> <br>
