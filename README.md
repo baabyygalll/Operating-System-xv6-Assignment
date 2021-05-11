@@ -11,7 +11,7 @@ Prodi : Ilmu Komputer 2019
 <br>
 <br>
 
-<b> Report Of Code Modification</b> <br>
+<b> Report of Code Modification</b> <br>
 <a href="#">diff_report.pdf</a> <br> 
   <br>
 
