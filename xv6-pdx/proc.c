@@ -7,6 +7,10 @@
 #include "proc.h"
 #include "spinlock.h"
 
+#ifdef CS333_P2
+#include "pdx.h"
+#endif
+
 static char *states[] = {
   [UNUSED]    "unused",
   [EMBRYO]    "embryo",
@@ -177,6 +181,12 @@ userinit(void)
   p->tf->esp = PGSIZE;
   p->tf->eip = 0;  // beginning of initcode.S
 
+  #ifdef CS333_P2
+  p->uid = DEFAULT_UID;
+  p->gid = DEFAULT_GID;
+  #endif // CS333_P2
+
+
   safestrcpy(p->name, "initcode", sizeof(p->name));
   p->cwd = namei("/");
 
@@ -248,6 +258,11 @@ fork(void)
   safestrcpy(np->name, curproc->name, sizeof(curproc->name));
 
   pid = np->pid;
+  np->uid = curproc->uid;
+  np->gid = curproc->gid;
+
+
+
 
   acquire(&ptable.lock);
   np->state = RUNNABLE;
